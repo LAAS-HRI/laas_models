@@ -16,7 +16,7 @@
             <box size="1.35 0.85 0.75"/>
            </geometry>
            <origin rpy="0 0 0" xyz="0 0 0.375"/>
-           <contact_coefficients mu="0.0" kp="0.0" kd="0.0"/>
+           <contact_coefficients mu="1000.0" kp="0.0" kd="0.0"/>
         </collision>
         <inertial>
           <mass value="25"/>

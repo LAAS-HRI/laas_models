@@ -4,7 +4,7 @@
     <link name="black_cube">
         <visual>
           <geometry>
-            <box size="0.075 0.075 0.075"/>
+            <box size="0.055 0.055 0.055"/>
           </geometry>
           <material name="black">
             <color rgba=".8 .8 .8 1"/>
@@ -12,9 +12,9 @@
         </visual>
         <collision>
           <geometry>
-            <box size="0.075 0.075 0.075"/>
+            <box size="0.055 0.055 0.055"/>
           </geometry>
-          <contact_coefficients mu="0.0" kp="0.00" kd="0.0"/>
+          <contact_coefficients mu="1000.0" kp="0.00" kd="0.0"/>
         </collision>
         <inertial>
           <mass value="0.075"/>
