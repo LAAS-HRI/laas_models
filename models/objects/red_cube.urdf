@@ -1,21 +1,24 @@
 <?xml version="1.0"?>
 
-<link name="red_cube">
-    <visual>
-      <geometry>
-        <mesh filename="package://laas_models/models/objects/red_cube.3ds"/>
-      </geometry>
-      <material name="red">
-        <color rgba=".8 0 0 1"/>
-      </material>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://laas_models/models/objects/red_cube.3ds"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="0.075"/>
-      <inertia ixx="0.00378125" ixy="0.0" ixz="0.0" iyy="0.00378125" iyz="0.0" izz="0.00378125"/>
-    </inertial>
-</link>
+<robot name="red_cube">
+    <link name="red_cube">
+        <visual>
+          <geometry>
+             <box size="0.075 0.075 0.075"/>
+          </geometry>
+          <material name="red">
+            <color rgba=".8 0 0 1"/>
+          </material>
+        </visual>
+        <collision>
+          <geometry>
+            <box size="0.075 0.075 0.075"/>
+          </geometry>
+          <contact_coefficients mu="0.0" kp="0.01" kd="0.0"/>
+        </collision>
+        <inertial>
+          <mass value="0.075"/>
+          <inertia ixx="0.000378125" ixy="0.0" ixz="0.0" iyy="0.000378125" iyz="0.0" izz="0.000378125"/>
+        </inertial>
+    </link>
+</robot>
