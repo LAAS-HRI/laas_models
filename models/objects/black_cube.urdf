@@ -14,7 +14,7 @@
           <geometry>
             <box size="0.055 0.055 0.055"/>
           </geometry>
-          <contact_coefficients mu="1000.0" kp="0.00" kd="0.0"/>
+          <contact_coefficients mu="10000.0" kp="0.00" kd="0.0"/>
         </collision>
         <inertial>
           <mass value="0.075"/>
