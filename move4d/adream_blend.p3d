@@ -1,0 +1,28 @@
+p3d_beg_desc P3D_ENV ADREAM
+
+p3d_read_blend adream.blend 1.
+
+#p3d_set_env_box -20 20.5 -20 23.5 0 3
+p3d_set_env_box 2.7 7.0 5.5 9.0 -0.1 3
+
+# ************* INTERNAL OBJECTS ***************
+p3d_read_macro ./Objects/Movable/PepperCylinder.macro PEPPERCYLINDER
+p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
+
+# ************* HUMANS ***************
+
+p3d_read_collada rayman/face_base.urdf FACE_HUMAN1
+
+# ************* ROBOTS ***************
+
+p3d_read_collada pepper/pepper.urdf PEPPER_ROBOT 1
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. 4. 3. 0. 0. 0. 0. 0. 0. 0. 0. 0. 86.467 1. 0. -1. -90.752 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 15. 0. 0. 85.725 -1. 0. 1. 86.8 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 15. 0. 0. 0. 0. 0.000000
+p3d_set_robot_goto 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.000000
+
+p3d_add_desc_rob_col_init PEPPER_ROBOT
+p3d_desactivate_col_check automatic2
+
+p3d_set_active_robot PEPPER_ROBOT
+
+p3d_set_ff_limits_in_env_box
+
