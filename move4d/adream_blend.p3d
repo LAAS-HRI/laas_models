@@ -13,7 +13,7 @@ p3d_read_blend adream.blend 1.
 ###p3d_set_env_box -2 15. -5 20.5 0 3
 # the lounge appartment area
 #p3d_set_env_box 2.7 7.0 5.5 9.0 -0.1 3
-p3d_set_env_box 0.75 7.4 15.05 17.45 0 3
+p3d_set_env_box 0.75 7.4 14.05 17.45 0 3
 
 # ************* INTERNAL OBJECTS ***************
 # the cylinders are used to compute collision for navigation purposes. You can change the model, not the name.
